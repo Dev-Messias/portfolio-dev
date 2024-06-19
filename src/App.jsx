@@ -1,11 +1,16 @@
+import { BrowserRouter } from 'react-router-dom';
+import RoutesApp from "./routes";
 
+import  ThemeProvider from './context/theme';
 
 function App() {
 
   return (
-    <>
-      <h1 className="text-gray-900" >Ola!!</h1>
-    </>
+    <BrowserRouter>
+      <ThemeProvider>
+        <RoutesApp/>
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 
