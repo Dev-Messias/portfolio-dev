@@ -1,9 +1,11 @@
 import Header from "../../components/header";
+import SectionHome from "../../components/sectionHome";
 
-function Home(){
-    return(
+function Home() {
+    return (
         <div className="w-full" >
-            <Header/>
+            <Header />
+            <SectionHome />
         </div>
     )
 }

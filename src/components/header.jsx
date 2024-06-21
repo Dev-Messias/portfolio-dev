@@ -34,7 +34,7 @@ function Header() {
             </div>
             { /* Fim mobile menu */}
 
-            <header className="flex flex-row items-center shadow-md  w-full  bg-white dark:bg-slate-900  " >
+            <header className="flex flex-row items-center shadow-2xl  w-full  bg-white dark:bg-slate-900  " >
                 <div className="flex flex-row items-center  justify-between py-6 px-4 w-full  lg:max-w-[1100px] 2xl:max-w-[1600px] m-auto" >
                     <h1 className="font-semibold text-slate-950 dark:text-slate-100 text-xl lg:text-[25px] 2xl:text-2xl" >Messias <span className="text-blue-700 dark:text-blue-500" >| Dev.</span></h1>
                     <div className="flex flex-row items-center gap-3 md:gap-10" >
