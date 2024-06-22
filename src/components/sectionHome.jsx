@@ -1,9 +1,8 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { useTypewriter, Cursor, Typewriter } from 'react-simple-typewriter';
+import {  Typewriter } from 'react-simple-typewriter';
 import ParticlesBackground from "./particlesBackground";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { VscVscode } from "react-icons/vsc";
 import { FaReact, FaHtml5, FaCss3Alt, FaFigma, FaNodeJs, FaGitAlt } from "react-icons/fa";
 
 function SectionHome() {
@@ -11,8 +10,8 @@ function SectionHome() {
     return (
 
 
-        <section className="w-full h-[500px] lg:h-[600px] rounded-br-2xl flex flex-col items-center bg-slate-100 dark:bg-slate-900" >
-
+        <section  className="w-full h-[500px] lg:h-[600px] rounded-br-2xl flex flex-col items-center bg-slate-100 dark:bg-slate-900" >
+            
             <div className="w-full flex flex-col items-center lg:max-w-[1100px] 2xl:max-w-[1600px] m-auto" >
                 <div className="w-full flex flex-col items-center gap-3" >
                     <h1 className="text-3xl md:text-4xl xl:text-5xl font-semibold text-black dark:text-slate-50" >Emanoel Messias</h1>
@@ -35,50 +34,50 @@ function SectionHome() {
                 </div>
             </div>
 
-            <div className="w-full flex flex-row py-5 rounded-br-2xl  bg-slate-200 dark:bg-slate-400 items-center justify-center gap-4 md:gap-10 lg:gap-16" >
+            <div className="w-full flex flex-row py-5   bg-slate-200 dark:bg-slate-400 items-center justify-center gap-2 md:gap-10 lg:gap-16" >
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <FaHtml5 className="text-xl lg:text-3xl text-orange-800" />
-                    <p className="font-semibold text-[9px]" >HTML</p>
+                    <p className="  font-semibold text-[8px] md:text-[9px]" >HTML</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <FaCss3Alt className="text-xl lg:text-3xl text-sky-800" />
-                    <p className="font-semibold text-[9px]" >CSS</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >CSS</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <IoLogoJavascript className="text-xl lg:text-3xl text-yellow-800" />
-                    <p className="font-semibold text-[9px]" >JAVASCRIPT</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >JAVASCRIPT</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <FaReact className="text-xl lg:text-3xl text-sky-800" />
-                    <p className="font-semibold text-[9px]" >REACTJS</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >REACTJS</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <FaFigma className="text-xl lg:text-3xl text-rose-700" />
-                    <p className="font-semibold text-[9px]" >FIGMA</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >FIGMA</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <FaNodeJs className="text-xl lg:text-3xl text-emerald-800" />
-                    <p className="font-semibold text-[9px]" >NODEJS</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >NODEJS</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <FaGitAlt className="text-xl lg:text-3xl text-orange-700" />
-                    <p className="font-semibold text-[9px]" >GIT</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >GIT</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <BiLogoPostgresql className="text-xl lg:text-3xl text-cyan-800" />
-                    <p className="font-semibold text-[9px]" >POSTGRESQL</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >POSTGRESQL</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center gap-1" >
                     <IoLogoFirebase className="text-xl lg:text-3xl text-yellow-600" />
-                    <p className="font-semibold text-[9px]" >FIREBASE</p>
+                    <p className="font-semibold text-[8px] md:text-[9px]" >FIREBASE</p>
                 </div>
 
             </div>

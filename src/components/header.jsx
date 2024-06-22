@@ -1,7 +1,8 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { AuthContext } from '../context/theme';
 
 import { MdDehaze, MdOutlineDarkMode, MdOutlineLightMode, MdClose } from "react-icons/md";
+import { useLocation } from 'react-router-dom';
 
 function Header() {
 
@@ -19,32 +20,35 @@ function Header() {
         }
     }
 
+
+ 
+
     return (
         <>
             { /* mobile menu */}
             <div className={`absolute z-50 w-full ${display}  flex-col items-start px-3 py-2 bg-white dark:bg-slate-900 shadow-xl border-b-2 top-20 md:top-20 border-t-2  `} >
                 <nav className="flex flex-col mt-4  w-full" >
                     <ul className="flex flex-col items-start gap-6 mb-10 font-medium text-slate-600 dark:text-slate-100 " >
-                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Inicio</a></li>
-                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Projetos</a></li>
-                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Sobre</a></li>
-                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Contatos</a></li>
+                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()}  href="#home">Inicio</a></li>
+                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()} href='#projetos'  >Projetos</a></li>
+                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()} href="#sobre">Sobre</a></li>
+                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()} href="#contatos">Contatos</a></li>
                     </ul>
                 </nav>
             </div>
             { /* Fim mobile menu */}
 
-            <header className="flex flex-row items-center shadow-2xl  w-full  bg-white dark:bg-slate-900  " >
+            <header id='home' className="flex flex-row items-center shadow-2xl  w-full  bg-white dark:bg-slate-900   " >
                 <div className="flex flex-row items-center  justify-between py-6 px-4 w-full  lg:max-w-[1100px] 2xl:max-w-[1600px] m-auto" >
                     <h1 className="font-semibold text-slate-950 dark:text-slate-100 text-xl lg:text-[25px] 2xl:text-2xl" >Messias <span className="text-blue-700 dark:text-blue-500" >| Dev.</span></h1>
                     <div className="flex flex-row items-center gap-3 md:gap-10" >
 
                         <nav className="hidden md:flex" >
                             <ul className="flex flex-row items-center gap-10 font-medium text-slate-600 dark:text-slate-100 " >
-                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Inicio</a></li>
-                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Projetos</a></li>
-                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Sobre</a></li>
-                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#">Contatos</a></li>
+                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#home">Inicio</a></li>
+                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#projetos">Projetos</a></li>
+                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#sobre">Sobre</a></li>
+                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#contatos">Contatos</a></li>
                             </ul>
                         </nav>
 

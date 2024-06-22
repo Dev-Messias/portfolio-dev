@@ -1,11 +1,13 @@
 import Header from "../../components/header";
 import SectionHome from "../../components/sectionHome";
+import SectionProject from "../../components/sectionProject";
 
 function Home() {
     return (
-        <div className="w-full" >
+        <div className="w-full " >
             <Header />
-            <SectionHome />
+            <SectionHome  />
+            <SectionProject  />
         </div>
     )
 }
