@@ -59,7 +59,7 @@ function SectionProject() {
         <section id="projetos" className=" flex flex-col items-center   w-full  bg-white dark:bg-slate-300 " >
             <div className="flex flex-col gap-4 items-center  justify-between py-6 px-4 w-full  lg:max-w-[1100px] 2xl:max-w-[1600px] m-auto" >
                 <div className="w-full flex flex-col gap-3" >
-                    <h3 className="font-bold text-xl" >Projetos</h3>
+                    <h3 className="font-bold text-xl md:text-2xl 2xl:text-3xl" >Projetos</h3>
                     <hr />
                 </div>
 

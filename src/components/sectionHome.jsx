@@ -10,7 +10,7 @@ function SectionHome() {
     return (
 
 
-        <section  className="w-full h-[500px] lg:h-[600px] rounded-br-2xl flex flex-col items-center bg-slate-100 dark:bg-slate-900" >
+        <section id='home'  className="w-full h-[500px] lg:h-[600px] rounded-br-2xl flex flex-col items-center bg-slate-100 dark:bg-slate-900" >
             
             <div className="w-full flex flex-col items-center lg:max-w-[1100px] 2xl:max-w-[1600px] m-auto" >
                 <div className="w-full flex flex-col items-center gap-3" >
@@ -27,8 +27,8 @@ function SectionHome() {
                         /></span></p>
                 </div>
                 <div className="flex flex-row gap-4 mt-9" >
-                    <a href="#"> <FaGithub className="text-3xl text-black dark:text-blue-500 hover:-translate-y-1 duration-200 " /></a>
-                    <a href="#"> <FaLinkedin className="text-3xl text-blue-700 dark:text-blue-500 hover:-translate-y-1 duration-200" /> </a>
+                    <a href="https://github.com/Dev-Messias" target="_blank" > <FaGithub className="text-3xl text-black dark:text-blue-500 hover:-translate-y-1 duration-200 " /></a>
+                    <a  href="https://www.linkedin.com/in/emanoel-messias/" target="_blank"> <FaLinkedin className="text-3xl text-blue-700 dark:text-blue-500 hover:-translate-y-1 duration-200" /> </a>
 
 
                 </div>
