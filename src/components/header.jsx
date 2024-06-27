@@ -32,7 +32,7 @@ function Header() {
                         <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()}  href="#home">Inicio</a></li>
                         <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()} href='#projetos'  >Projetos</a></li>
                         <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()} href="#sobre">Sobre</a></li>
-                        <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()} href="#contatos">Contatos</a></li>
+                        {/* <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" onClick={() => handleMenu()} href="#contatos">Contatos</a></li> */}
                     </ul>
                 </nav>
             </div>
@@ -48,7 +48,7 @@ function Header() {
                                 <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#home">Inicio</a></li>
                                 <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#projetos">Projetos</a></li>
                                 <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#sobre">Sobre</a></li>
-                                <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#contatos">Contatos</a></li>
+                                {/* <li><a className="hover:text-blue-800 dark:hover:text-blue-500 hover:font-semibold duration-100" href="#contatos">Contatos</a></li> */}
                             </ul>
                         </nav>
 
